@@ -1,7 +1,7 @@
 docker-docker2aci
 =================
 
-Library and CLI tool to convert Docker images to ACIs in Docker. This installs `docker2aci` command.
+Library and CLI tool to convert Docker images to ACIs in Docker. This image has `docker2aci` installed.
 
 Build
 -----
