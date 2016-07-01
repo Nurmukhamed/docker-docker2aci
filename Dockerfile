@@ -10,6 +10,7 @@ RUN yum install -y golang git-core && \
     cp -v ./bin/docker2aci /usr/bin && \
     cd .. && \
     rm -rf docker2aci && \
+    yum remove -y golang git-core && \
     yum clean all
 
 CMD /usr/bin/docker2aci
