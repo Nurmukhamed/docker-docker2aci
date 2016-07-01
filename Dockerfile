@@ -8,6 +8,8 @@ RUN yum install -y golang git-core && \
     cd docker2aci && \
     ./build.sh && \
     cp -v ./bin/docker2aci /usr/bin && \
+    cd .. && \
+    rm -rf docker2aci && \
     yum clean all
 
 CMD /usr/bin/docker2aci
