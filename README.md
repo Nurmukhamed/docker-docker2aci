@@ -23,7 +23,7 @@ To convert docker image to aci:
     $ docker run --rm \
         -v $(pwd)/build:/tmp/build:Z \
         themalkolm/docker2aci /bin/bash -c '
-      cd /build
+      cd /tmp/build
       docker2aci docker://centos:7
       '
 
